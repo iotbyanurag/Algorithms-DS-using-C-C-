@@ -1,0 +1,24 @@
+
+// This particular namespace contains functions for sorting
+namespace sort {
+    void  QuickSort(){
+
+    }
+    void InsertSort(){
+
+    }
+    void MergeSort(){
+
+    }
+
+    namespace comparison {
+        void less(){
+
+        }
+        void greater(){
+
+        }   
+}
+
+It can be accessed via 
+sort::comparison::less();
