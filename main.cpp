@@ -34,10 +34,28 @@ Rectangle::perimeter(){
     return 0;
 }
 
+namespace avg{
+    float calculate(float x, float y){
+    return (x+y)/2 ;
+    }
+}
+
+namespace basic{
+    float calculate(float x, float y){
+    return (x+y);
+    }
+}
+
 int main() {
-    Rectangle r(10,5);
-    cout<<"Hello world\n\r";
-    cout << r.area();
-    cout << r.perimeter();
+    // Rectangle r(10,5);
+    // cout<<"Hello world\n\r";
+    // cout << r.area();
+    // cout << r.perimeter();
+    using namespace avg;
+    cout<<"Avg is "<< calculate(2.8f, 3.5f)<<"\n\r";
+
+    cout<<"Basic Avg is "<< basic::calculate(2.8f, 3.5f)<<"\n\r";
+
+    // cout<<"Hello World NEW NEW";
     return 0;
 }
